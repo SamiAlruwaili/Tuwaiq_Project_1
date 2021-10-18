@@ -1,0 +1,20 @@
+h1 {
+  background-color: blue;
+  text-align: center;
+}
+
+img {
+  border-block: 50%;
+  width: 30%;
+  height: 30%;
+  max-width: 40%;
+  flex-wrap: wrap;
+  padding: 3%;
+}
+
+h3 {
+  text-align: center;
+  color: blanchedalmond;
+  background-color: black;
+  padding: 0%;
+}
