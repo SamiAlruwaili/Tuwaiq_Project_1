@@ -1,9 +1,8 @@
-// we try to keep our global variables at the top of the js file
 const tourismContainer = $("tourismContainer");
 const imgInput = $("#img");
 const nameInput = $("#name");
 const describeInput = $("#describe");
-// an array of students with some data
+
 const imgArray = [
   { imgArray: "../برج ايفل.jpg", name: "(برج_ايفل)", Describe: "باريس_فرنسا" },
   {
@@ -26,12 +25,18 @@ const imgArray = [
 function renderArr(array) {
   for (let i = 0; i < array.length; i++) {
     const div = $(`<div class="secondryContainer">
-          <h1>${array[i].img}</h1>
-          <h1>${array[i].name}</h1>
-          <h1>${array[i].Describe}</h1>
+          <img src =${array[i].img}>
+          <h3 src =${array[i].name}>
+          <h3 src${array[i].Describe}>
       </div>`);
     tourismContainer.append(div);
   }
+}
+
+function world() {
+  imgArray: imgInput.val();
+  nameArray: nameInput.val();
+  descriArray: describeInput.val;
 }
 
 renderArr(imgArray);
@@ -39,3 +44,11 @@ renderArr(imgArray);
 renderArr(imgArray);
 
 renderArr([newImg]);
+
+function hideHandler() {
+  tourismContainer.hide();
+}
+
+function showHandler() {
+  tourismContainer.show();
+}
